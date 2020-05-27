@@ -12,7 +12,7 @@ html{
 	font-weight: bold;
 }
 h1{
-	font-size: 50px;
+	font-size: 45px;
 	margin-left: 5%;
 	font-weight: bolder;
 }
@@ -275,7 +275,7 @@ canvas{
 display: none;
 }
 #slider{
-  margin-top: -2%;
+  margin-top: -15%;
 }
 #slider label{
   height: 100%;
