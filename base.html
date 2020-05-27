@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/base/mark.svg" sizes="16x16" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="SARC, Student Alumni Relations Cell, SARC-IITB, sarc, sarc-iitb, sarc iitb, SARC iitb, SARC IITB, SARC IITB Coordie, HTML, CSS, javascript">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" href="css/base_ham.css">
+	
+    <title>Enroll to Explore | SARC</title>
+	<!-- 
+		change font family for all -------- 																Done
+		font color to #323232 ---------------- 																Done
+		Increase margin of canvas to 120 ------------- 														Done
+		Use different picks for headings ------------- 														Done
+		change box properties of 4th contact card   ------------  											Done
+		change bg-color of mobile navbar to #e6e4e4  -------------- 										Done
+		Mobile View Contact Portfolio to margin left   ------------- 										Done
+		Name of CTM too close to image border and make it bold ... contact number in normal    ----------- 	Done
+		Alignment of CTM names from right to Center ------------ 											Done
+		SARC logo home of mobile View  ----------- 															Done
+		Spacing in mobile view Portfolios ------------ 														Done
+		
+		<video width="90%" height="90%" poster="/static/img/base/sarc.png" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="/static/vid/asmp.mp4" type="video/mp4"> </video>
+		<div class="row" font-size: 2.4em;>
+	
+		
+		-->
+
+ <!-- Change , , Add Keywords -->
+ 	<!--Base		- Change About Us					-> PR									----------- Done
+					- Change Opportunities For You		-> PR									----------- Done => Scraped it off
+					- Change Do you Know Images			-> Design PR							----------- Pending (dummy used)
+		Portfolios  - Change All Videos					-> PR									----------- Done
+					- Change all descriptions			-> PR									----------- Done
+		Contact US  - Change CTM Photos					-> CTMs									-----------	Done
+		Misc		- Page Titles						-> PR									----------- Done
+					- FavIcon							-> Design								----------- Pending (dummy used)
+					- Keywords							-> Web									----------- Done
+					- Deployment						-> Web									----------- Pending (night)
+			
+				-->
+	    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+		<style>	#mark{border: 0px;}	</style>
+		
+	<style>
+		@font-face{
+		font-family: MyFont;
+		src: url('css/GlacialIndifference-Regular.otf');
+		}
+		*{
+			color: #323232 !important;
+			font-family: MyFont;
+		}
+	</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+   <div class="navbar-container container" id="navbarVSV">
+		<ul class="nav">
+			<li class="nav-item">
+				<a href="base.html" class="nav-link">About</a>
+				<div class="underline"></div>
+			</li>
+			<li class="nav-item">
+				<a href="schedule.html" class="nav-link">Portfolios	</a>
+				<div class="underline"></div>
+			</li>
+			<li class="nav-item">
+				<a href="base.html" class="nav-link"><img src="img/base/sarc.png" id="mark" style="width:100px; 
+	margin-left: 0;"></a>
+			</li>
+			<li class="nav-item">
+				<a href="" class="nav-link">Register</a>
+				<div class="underline"></div>
+			</li>
+			<li class="nav-item">
+				<a href="contacts.html" class="nav-link">Contact Us</a>
+				<div class="underline"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="hamburger hamburger--emphatic" id="hamburgerVivek">
+    	<div class="hamburger-box">
+      		<div class="hamburger-inner"></div>
+    	</div>
+  	</div>
+  	<div class="overlay navbar-container">
+  		<ul id="listVSV">
+
+			<li class="nav-link">
+				<a href="base.html">About</a>
+				<div class="underline"></div>
+			</li>
+			<li class="nav-link">
+				<a href="schedule.html">Portfolios</a>
+				<div class="underline"></div>
+			</li>
+			<li class="nav-link">
+				<a href="">Register</a>
+				<div class="underline"></div>
+			</li>
+			<li class="nav-link">
+				<a href="contacts.html">Contact Us</a>
+				<div class="underline"></div>
+			</li>
+  		</ul>
+  	</div>
+	</div>
+
+
+
+<canvas id="canvas" style="margin-bottom: 120px;"></canvas>
+<img src="img/base/sarc2.png" id="sarc" alt="" srcset="">
+	<div class="desc1">
+		<h1>About Us</h1>
+		<img class="heading_back" src="img/schedule/Shape 8.svg">
+	
+		<p>Student Alumni Relations Cell (SARC) is a student body run under the guidance of the Dean ACR Office, IIT Bombay. Started in 2008 we work with a vision of bringing the alumni and student communities of IITB together to create a synergy of ideas, respect, knowledge and everything that our Institute stands for.</p>
+	</div>
+	<!-- <div class="desc1">
+		<h1>Opportunities For You</h1>
+		<img class="heading_back" src="{% static 'img/schedule/Shape 9.svg' %}">
+	
+		<p>Student Alumni Relations Cell (SARC) is a student body run under the guidance of the Dean ACR Office, IIT Bombay. Started in 2008 we work with a vision of bringing the alumni and student communities of IITB together to create a synergy of ideas, respect, knowledge and everything that our Institute stands for.</p>
+	</div> -->
+   	
+   	<div class="desc1"> <h1>Do You Know?</h1>
+    <img class="heading_back" src="img/schedule/Shape 4.svg">
+	
+  	<p class="mobv">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+     Odit porro quisquam consequatur dolores, quod voluptatum. </p></div>
+  
+	<section id="slider">
+		<input type="radio" name="slider" id="s1" checked>
+		<input type="radio" name="slider" id="s2">
+		<input type="radio" name="slider" id="s3">
+		<input type="radio" name="slider" id="s4">
+		<input type="radio" name="slider" id="s5">
+		<input type="radio" name="slider" id="s6">
+		<input type="radio" name="slider" id="s7">
+		<input type="radio" name="slider" id="s8">
+		<input type="radio" name="slider" id="s9">
+		<input type="radio" name="slider" id="s10">
+
+		<label for="s1" id="slide1"><img src="img/gallery/alu1.jpg"></label>
+		<label for="s2" id="slide2"><img src="img/gallery/alu2.jpg"></label>
+		<label for="s3" id="slide3"><img src="img/gallery/alu3.jpg"></label>
+		<label for="s4" id="slide4"><img src="img/gallery/alu4.jpg"></label>
+		<label for="s5" id="slide5"><img src="img/gallery/alu5.jpg"></label>
+		<label for="s6" id="slide6"><img src="img/gallery/alu6.jpg"></label>
+		<label for="s7" id="slide7"><img src="img/gallery/alu7.jpg"></label>
+		<label for="s8" id="slide8"><img src="img/gallery/alu8.jpg"></label>
+		<label for="s9" id="slide9"><img src="img/gallery/alu9.jpg"></label>
+		<label for="s10" id="slide10"><img src="img/gallery/alu10.jpg"></label>
+	</section>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XV2KWTMJY0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XV2KWTMJY0');
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	
+<script>window.onload = function() {
+	let c = init("canvas").c,
+		canvas = init("canvas").canvas,
+	w = (canvas.width = window.innerWidth),
+	h = (canvas.height = window.innerHeight);
+	//initiation
+	function cc(A,B,C){
+	let D = 2*(A.x*(B.y-C.y)+B.x*(C.y-A.y)+C.x*(A.y-B.y));
+	let S = {
+		x: (1/D)*((A.x*A.x+A.y*A.y)*(B.y-C.y)+(B.x*B.x+B.y*B.y)*(C.y-A.y)+(C.x*C.x+C.y*C.y)*(A.y-B.y)),
+		y: (1/D)*((A.x*A.x+A.y*A.y)*(C.x-B.x)+(B.x*B.x+B.y*B.y)*(A.x-C.x)+(C.x*C.x+C.y*C.y)*(B.x-A.x))
+	}
+	return S;
+	}
+	function dist(A,B){
+	return Math.sqrt(Math.pow(A.x-B.x,2)+Math.pow(A.y-B.y,2));
+	}
+	class point{
+	constructor(x,y){
+		this.x = x;
+		this.y = y;
+	}
+	update(x,y){
+		this.x = x;
+		this.y = y;
+	}
+	}
+	class triangle{
+	constructor(A,B,C,lw){
+		this.a = A;
+		this.b = B;
+		this.c = C;
+		this.s = cc(A,B,C);
+		this.ty = this.c;
+		this.lw = lw;
+		
+		this.x = dist(this.s,this.a);
+		this.c1 = dist(this.a,this.b)/2;
+		this.c2 = dist(this.b,this.c)/2;
+		this.c3 = dist(this.c,this.a)/2;
+		this.a2ab = Math.atan2(this.a.y-this.b.y,this.a.x-this.b.x);
+		this.a2bc = Math.atan2(this.b.y-this.c.y,this.b.x-this.c.x);
+		this.a2ca = Math.atan2(this.c.y-this.a.y,this.c.x-this.a.x);
+		this.rab = Math.sqrt(this.x*this.x-this.c1*this.c1);
+		this.rbc = Math.sqrt(this.x*this.x-this.c2*this.c2);
+		this.rca = Math.sqrt(this.x*this.x-this.c3*this.c3);
+		
+		this.s1 = {
+		x:this.s.x+(this.rab/2)*Math.cos(this.a2ab+Math.PI/2), 
+		y:this.s.y+(this.rab/2)*Math.sin(this.a2ab+Math.PI/2) 
+		};
+		this.s2 = {
+		x:this.s.x+(this.rbc/2)*Math.cos(this.a2bc+Math.PI/2), 
+		y:this.s.y+(this.rbc/2)*Math.sin(this.a2bc+Math.PI/2)
+		};
+		this.s3 = {
+		x:this.s.x+(this.rca/2)*Math.cos(this.a2ca+5*Math.PI/2), 
+		y:this.s.y+(this.rca/2)*Math.sin(this.a2ca+5*Math.PI/2)
+		};
+	}
+	update(A,B,C){
+		this.a = A;
+		this.b = B;
+		this.c = C;
+		this.s = cc(A,B,C);
+		this.ty = this.c;
+		
+		this.x = dist(this.s,this.a);
+		this.c1 = dist(this.a,this.b)/2;
+		this.c2 = dist(this.b,this.c)/2;
+		this.c3 = dist(this.c,this.a)/2;
+		this.a2ab = Math.atan2(this.a.y-this.b.y,this.a.x-this.b.x);
+		this.a2bc = Math.atan2(this.b.y-this.c.y,this.b.x-this.c.x);
+		this.a2ca = Math.atan2(this.c.y-this.a.y,this.c.x-this.a.x);
+		this.rab = Math.sqrt(this.x*this.x-this.c1*this.c1);
+		this.rbc = Math.sqrt(this.x*this.x-this.c2*this.c2);
+		this.rca = Math.sqrt(this.x*this.x-this.c3*this.c3);
+		
+		this.s1 = {
+		x:this.s.x+(this.rab/2)*Math.cos(this.a2ab+Math.PI/2), 
+		y:this.s.y+(this.rab/2)*Math.sin(this.a2ab+Math.PI/2) 
+		};
+		this.s2 = {
+		x:this.s.x+(this.rbc/2)*Math.cos(this.a2bc+Math.PI/2), 
+		y:this.s.y+(this.rbc/2)*Math.sin(this.a2bc+Math.PI/2)
+		};
+		this.s3 = {
+		x:this.s.x+(this.rca/2)*Math.cos(this.a2ca+5*Math.PI/2), 
+		y:this.s.y+(this.rca/2)*Math.sin(this.a2ca+5*Math.PI/2)
+		};
+	}
+	move(m){
+		this.c = m;
+		this.s = cc(this.a,this.b,this.c);
+		
+		this.x = dist(this.s,this.a);
+		this.c1 = dist(this.a,this.b)/2;
+		this.c2 = dist(this.b,this.c)/2;
+		this.c3 = dist(this.c,this.a)/2;
+		this.a2ab = Math.atan2(this.a.y-this.b.y,this.a.x-this.b.x);
+		this.a2bc = Math.atan2(this.b.y-this.c.y,this.b.x-this.c.x);
+		this.a2ca = Math.atan2(this.c.y-this.a.y,this.c.x-this.a.x);
+		this.rab = Math.sqrt(this.x*this.x-this.c1*this.c1);
+		this.rbc = Math.sqrt(this.x*this.x-this.c2*this.c2);
+		this.rca = Math.sqrt(this.x*this.x-this.c3*this.c3);
+		
+		this.s1 = {
+		x:this.s.x+(this.rab/2)*Math.cos(this.a2ab+Math.PI/2), 
+		y:this.s.y+(this.rab/2)*Math.sin(this.a2ab+Math.PI/2) 
+		};
+		this.s2 = {
+		x:this.s.x+(this.rbc/2)*Math.cos(this.a2bc+Math.PI/2), 
+		y:this.s.y+(this.rbc/2)*Math.sin(this.a2bc+Math.PI/2)
+		};
+		this.s3 = {
+		x:this.s.x+(this.rca/2)*Math.cos(this.a2ca+5*Math.PI/2), 
+		y:this.s.y+(this.rca/2)*Math.sin(this.a2ca+5*Math.PI/2)
+		};
+	}
+	iterate(it){
+		this.it = it;
+		// this.t1 = new triangle(this.a,this.b,this.s1,this.lw/2);
+		// this.t2 = new triangle(this.a,this.s2,this.c,this.lw/2);
+		// this.t3 = new triangle(this.b,this.c,this.s3,this.lw/2);
+		
+		this.t4 = new triangle(this.a,this.s1,this.s3,this.lw/2);
+		this.t5 = new triangle(this.b,this.s2,this.s1,this.lw/2);
+		this.t6 = new triangle(this.c,this.s3,this.s2,this.lw/2);
+		
+		this.t7 = new triangle(this.s1,this.s2,this.s3,this.lw/2);
+		
+		if(it < 2){
+		// this.t1.iterate(it+1);
+		// this.t2.iterate(it+1);
+		// this.t3.iterate(it+1);
+		
+		this.t4.iterate(it+1);
+		this.t5.iterate(it+1);
+		this.t6.iterate(it+1);
+		
+		this.t7.iterate(it+1);
+		}
+		
+		// this.t1.show();
+		// this.t2.show();
+		// this.t3.show();
+		
+		this.t4.show();
+		this.t5.show();
+		this.t6.show();
+		
+		this.t7.show();
+	}
+	show(){
+		// c.beginPath();
+		// c.lineTo(this.a.x,this.a.y);
+		// c.lineTo(this.b.x,this.b.y);
+		// c.lineTo(this.c.x,this.c.y);
+		// c.strokeStyle="white";
+		// c.lineWidth=this.lw;
+		// c.lineJoin="round";
+		// c.closePath();
+		// c.stroke();
+		
+		c.fillStyle="white";
+		c.fillRect(this.a.x-1,this.a.y-1,2,2);
+		c.fillRect(this.b.x-1,this.b.y-1,2,2);
+		c.fillRect(this.c.x-1,this.c.y-1,2,2);
+		
+		c.fillStyle="#00ffff";
+		c.fillRect(this.s.x-0.5,this.s.y-0.5,1,1);
+		c.fillStyle="#00ffff";
+		c.fillRect(this.s1.x-0.5,this.s1.y-0.5,1,1);
+		c.fillStyle="#00ffff";
+		c.fillRect(this.s2.x-0.5,this.s2.y-0.5,1,1);
+		c.fillStyle="#00ffff";
+		c.fillRect(this.s3.x-0.5,this.s3.y-0.5,1,1);
+		
+	}
+	}
+
+	let s = h/3,
+		A = new point(
+		w/2+s*Math.cos(0),
+		h/2+s*Math.sin(0)),
+		B = new point(
+		w/2+s*Math.cos(Math.PI/3), 
+		h/2+s*Math.sin(Math.PI/3)),
+		C = new point(
+		w/2+s*Math.cos(2*Math.PI/3),  
+		h/2+s*Math.sin(2*Math.PI/3)),
+		D = new point(
+		w/2+s*Math.cos(Math.PI),  
+		h/2+s*Math.sin(Math.PI)),
+		E = new point(
+		w/2+s*Math.cos(4*Math.PI/3),  
+		h/2+s*Math.sin(4*Math.PI/3)),
+		F = new point(
+		w/2+s*Math.cos(5*Math.PI/3),  
+		h/2+s*Math.sin(5*Math.PI/3)),
+		G = new point(
+		w/2,  
+		h/2),
+		lb = 1,
+		T = new triangle(A,B,G,lb),
+		T2 = new triangle(B,C,G,lb),
+		T3 = new triangle(C,D,G,lb),
+		T4 = new triangle(D,E,G,lb),
+		T5 = new triangle(E,F,G,lb),
+		T6 = new triangle(F,A,G,lb),
+		tx = w/2,
+		ty = h/2,
+		spd = 0;
+		
+
+	function draw() {
+	//animation
+	if(mouse.x){
+		T.move(mouse);
+		T2.move(mouse);
+		T3.move(mouse);
+		T4.move(mouse);
+		T5.move(mouse);
+		T6.move(mouse);
+	}else{
+		T.move({x: tx,y: ty});
+		T2.move({x: tx,y: ty});
+		T3.move({x: tx,y: ty});
+		T4.move({x: tx,y: ty});
+		T5.move({x: tx,y: ty});
+		T6.move({x: tx,y: ty});
+		tx = w/2+(s*Math.cos(Math.PI/6)-45)*Math.cos(spd);
+		ty = h/2+(s*Math.cos(Math.PI/6)-70)*Math.sin(spd);
+		spd+=0.05;
+	}
+	
+	T.iterate(0);
+	T2.iterate(0);
+	T3.iterate(0);
+	T4.iterate(0);
+	T5.iterate(0);
+	T6.iterate(0);
+	T.show();
+	T2.show();
+	T3.show();
+	T4.show();
+	T5.show();
+	T6.show();
+	}
+
+	let mouse = {
+	x: false,
+	y: false
+	};
+	let last_mouse = {};
+
+	canvas.addEventListener(
+	"mousemove",
+	function(e) {
+		last_mouse.x = mouse.x;
+		last_mouse.y = mouse.y;
+
+		mouse.x = e.pageX - this.offsetLeft;
+		mouse.y = e.pageY - this.offsetTop;
+	},
+	false
+	);
+	
+	canvas.addEventListener("mouseleave", function(e) {
+	mouse.x = false;
+	});
+	
+	function init(elemid) {
+	let canvas = document.getElementById(elemid),
+		c = canvas.getContext("2d"),
+		w = (canvas.width = window.innerWidth),
+		h = (canvas.height = window.innerHeight);
+	c.fillStyle = "rgba(30,30,30,1)";
+	c.fillRect(0, 0, w, h);
+	return {c:c,canvas:canvas};
+	}
+
+	function loop() {
+
+	window.requestAnimationFrame(loop);
+	c.fillStyle = "rgba(30,30,30,1)";
+	c.fillRect(0, 0, w, h);
+	draw();
+	}
+
+	window.addEventListener("resize", function() {
+	(w = canvas.width = window.innerWidth),
+	(h = canvas.height = window.innerHeight);
+		s = h/3,
+		A.update(w/2+s*Math.cos(0),h/2+s*Math.sin(0));
+		B.update(
+		w/2+s*Math.cos(Math.PI/3), 
+		h/2+s*Math.sin(Math.PI/3)),
+		C.update(
+		w/2+s*Math.cos(2*Math.PI/3),  
+		h/2+s*Math.sin(2*Math.PI/3)),
+		D.update(
+		w/2+s*Math.cos(Math.PI),  
+		h/2+s*Math.sin(Math.PI)),
+		E.update(
+		w/2+s*Math.cos(4*Math.PI/3),  
+		h/2+s*Math.sin(4*Math.PI/3)),
+		F.update(
+		w/2+s*Math.cos(5*Math.PI/3),  
+		h/2+s*Math.sin(5*Math.PI/3)),
+		G.update(
+		w/2,  
+		h/2),
+		T.update(A,B,G),
+		T2.update(B,C,G),
+		T3.update(C,D,G),
+		T4.update(D,E,G),
+		T5.update(E,F,G),
+		T6.update(F,A,G),
+		tx = w/2,
+		ty = h/2,
+	loop();
+	});
+
+	loop();
+	setInterval(loop, 1000 / 60);
+	}
+	</script>
+
+
+
+	<script type="text/javascript" src="js/base.js"></script>
+	<script>
+
+    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+</script>
+
+</body>
+</html>
