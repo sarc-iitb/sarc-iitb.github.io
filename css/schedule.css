@@ -139,10 +139,14 @@ h2{
 	font-weight: bold;
 	margin-right: 0;
 }
+#some-div{display: none;}
 @media only screen and (max-width: 960px){
 	#top-head{	
 			height: 60px;
 		}
+	#some-div{
+		display: block;
+	}
 }
 
 #medium{
@@ -171,38 +175,26 @@ h2{
 	display: none;
 }
 @media only screen and (min-width: 960px) {
-.fullscr{
-	display: none;
-}
-.row{
-	margin-top: 2%;
-	font-size: 2.4rem;
-	margin-bottom: 17%;
-}
-.show-row{
-	margin-bottom: 17%;
-}
-#navbarVSV{
-	position: sticky;
+	
+	.row{
+		margin-top: 2%;
+		font-size: 2.4rem;
+		margin-bottom: 17%;}
+	.show-row{
+		margin-bottom: 17%;}
+	#navbarVSV{
+		position: sticky;}
+	#top-head{
+		height: 90px;}
+	#top-head:hover + .fullscr{
+		display: block;}
+	.fullscr:hover{
+		display: block;}
+	#go-to-top{
+		position: sticky;
+		bottom: 90%;}
+	.hehe{text-align: center;}
 	}
-
-#top-head{
-	height: 90px;
-}
-#top-head:hover + .fullscr{
-	display: block;
-}
-.fullscr:hover{
-	display: block;
-}
-#go-to-top{
-	position: sticky;
-	bottom: 90%;
-}
-.hehe{
-	text-align: center;
-}
-}
 p{
 	text-align: justify;
 }

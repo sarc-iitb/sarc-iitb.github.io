@@ -149,15 +149,7 @@ h1{
   }
 
 
-  /*#aluminationLogo {
-	position: absolute;
-	display: inline-block;
-	width: 65%;
-	top: 2% !important;
-	left: 5%;
-
-  }*/
-
+  
   #aluminationLogo {
 	  z-index: 2;
 	position: absolute;
@@ -211,7 +203,6 @@ h1{
 
 	.nav-link {
 		position: relative;
-		left: 5%;
 	}
 }
 
@@ -244,7 +235,6 @@ h1{
 
 	.nav-link {
 		position: relative;
-		left: 15%;
 	}
 }
 
@@ -260,27 +250,29 @@ h1{
 		transform: translate(0,0);
 		opacity: 1;}
 }
-	
-.navbar-container ul li:hover ul.dropdown{
-	display: flex;
-	visibility: visible;
-	transform: translate(0,25px);
+
+
+
+.navbar-container ul li:hover ul.dropdown, .underline:hover ul.dropdown{
+	transform: translate(0,2px);
 	opacity: 1;
 	z-index: 0;
 	font-size: 0.8em;
 }
-.navbar-container ul li:hover li{
+
+.navbar-container ul li:hover li, .underline:hover li{
 	animation-name: slideInLeft;
 	animation-duration: 0.3s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: backwards;
 }
 ul.dropdown{
-	display: none;
+	display: flex;
 	position: absolute;
-	flex-direction: column;
+	flex-direction: row;
+	left: -5%;
 	margin: 0;
-	padding: 5px 5px 30px 5px;
+	padding: 0px 5px 5px 5px;
 	list-style: none;
 	background: #e5e4ea;
 	border-bottom-left-radius: 6px;
@@ -291,7 +283,12 @@ ul.dropdown{
 	opacity: 0;
 	z-index: -1;
 }
-
+#reg_dropdown{
+	left: 52%;
+}
+.dropdown li{
+	text-align: justify;
+}
 @media only screen and (max-width: 1200px) {
 	ul.dropdown{
 		position: relative;
