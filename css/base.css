@@ -251,3 +251,44 @@ h1{
 #listVSV{
     margin-top: -110px;
 }
+@keyframes slideInLeft{
+	from{
+		transform: translate(-25%,0);
+		opacity: 0;}
+	
+	to{
+		transform: translate(0,0);
+		opacity: 1;}
+}
+	
+.navbar-container ul li:hover ul.dropdown{
+	display: flex;
+	visibility: visible;
+	transform: translate(0,25px);
+	opacity: 1;
+	z-index: 0;
+	font-size: 0.8em;
+}
+.navbar-container ul li:hover li{
+	animation-name: slideInLeft;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+}
+ul.dropdown{
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	margin: 0;
+	padding: 5px 5px 30px 5px;
+	list-style: none;
+	background: #e5e4ea;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	box-shadow: 1px 2px 5px -1px rgba(0,0,0,0.15),0px 4px 14px -1px rgba(0,0,0,0.10);
+	transform: translate(0,-60px);
+	transition: transform 0.2s ease-out, opacity 0.2s, z-index 0s 0.2s;
+	opacity: 0;
+	z-index: -1;
+
+}
