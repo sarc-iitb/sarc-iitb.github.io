@@ -401,7 +401,7 @@
 
 	function draw() {
 	//animation
-	if(mouse.x){
+	if(mouse.x && mouse.y){
 		T.move(mouse);
 		T2.move(mouse);
 		T3.move(mouse);
@@ -409,15 +409,15 @@
 		T5.move(mouse);
 		T6.move(mouse);
 	}else{
-		T.move({x: tx,y: ty});
-		T2.move({x: tx,y: ty});
-		T3.move({x: tx,y: ty});
-		T4.move({x: tx,y: ty});
-		T5.move({x: tx,y: ty});
-		T6.move({x: tx,y: ty});
-		tx = w/2+(s*Math.cos(Math.PI/6)-45)*Math.cos(spd);
-		ty = h/2+(s*Math.cos(Math.PI/6)-70)*Math.sin(spd);
-		spd+=0.05;
+		// T.move({x: tx,y: ty});
+		// T2.move({x: tx,y: ty});
+		// T3.move({x: tx,y: ty});
+		// T4.move({x: tx,y: ty});
+		// T5.move({x: tx,y: ty});
+		// T6.move({x: tx,y: ty});
+		// tx = w/2+(s*Math.cos(Math.PI/6)-45)*Math.cos(spd);
+		// ty = h/2+(s*Math.cos(Math.PI/6)-70)*Math.sin(spd);
+		// spd+=0.05;
 	}
 	
 	T.iterate(0);
@@ -454,6 +454,7 @@
 	
 	canvas.addEventListener("mouseleave", function(e) {
 	mouse.x = false;
+	mouse.y = false;
 	});
 	
 	function init(elemid) {
