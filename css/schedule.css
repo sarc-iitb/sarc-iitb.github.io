@@ -131,9 +131,13 @@ img{
 	margin-right: auto;
 	width: 5%;
 }
-p{
+p,h2{
 	margin-left: 10%;
 	margin-right: 5%;
+}
+h2{
+	font-weight: bold;
+	margin-right: 0;
 }
 @media only screen and (max-width: 960px){
 	#top-head{	
@@ -151,17 +155,7 @@ p{
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-@media only screen and (min-width: 960px){
-h3{
-	height: fit-content;
-	width: fit-content;
-	align-items: center;
-	transform-origin: top;
-    transform: rotate(-90deg);
-    position: absolute;
-	top: 50%;
-	margin-bottom: 20px;
-}}
+
 
 @media only screen and (max-width: 960px){
 	#medium{
@@ -170,8 +164,103 @@ h3{
 	#small{
 		display: block;
 	}
-	h3{
-		margin-left: 10%;
-	}
+	
 }
 
+.fullscr{
+	display: none;
+}
+@media only screen and (min-width: 960px) {
+.fullscr{
+	display: none;
+}
+.row{
+	margin-top: 2%;
+	font-size: 2.4rem;
+	margin-bottom: 17%;
+}
+.show-row{
+	margin-bottom: 17%;
+}
+#navbarVSV{
+	position: sticky;
+	}
+
+#top-head{
+	height: 90px;
+}
+#top-head:hover + .fullscr{
+	display: block;
+}
+.fullscr:hover{
+	display: block;
+}
+#go-to-top{
+	position: sticky;
+	bottom: 90%;
+}
+.hehe{
+	text-align: center;
+}
+}
+p{
+	text-align: justify;
+}
+video{
+	vertical-align: middle;
+	height: 90%;
+}
+.p_2{
+	font-weight:lighter;
+	margin-top:-13%;
+}
+@media only screen and (min-width: 960px) {
+	.p_2{
+		font-size: 0.5em;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.p_2{
+		font-size: 0.75em;
+	}
+	h2, .heading_back{
+		padding-top: 70px;
+	}
+	.heading_back{
+		bottom: 150px;
+	}
+}
+@media only screen and (min-width: 1366px) {
+	.p_2{
+		font-size: 0.85em;
+	}
+}
+@media only screen and (min-width: 1800px) {
+	.p_2{
+		font-size: 0.9em;
+	}
+}
+@media only screen and (max-width: 1366px) {
+	.p_2{
+		margin-top: -21%;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.p_2{
+		margin-top: -13%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.p_2{
+		margin-top: -10%;
+	}
+}
+@media only screen and (max-width: 550px) {
+	h2{
+		font-size: 1.8em;
+	}
+}
+#reg_hda{
+	font-size: 1.1em;
+	font-style: oblique;
+}
