@@ -23,29 +23,39 @@
 			color: #323232 !important;
 			font-family: MyFont;
 		}
+		ul.dropdown{
+			left: 20%;
+		}
 	</style>
 
 <body>
-    <div class="navbar-container container" id="navbarVSV">
+     <div class="navbar-container container" id="navbarVSV">
          <ul class="nav">
              <li class="nav-item">
                  <a href="base.html" class="nav-link">About</a>
+                 <div class="underline"></div></li>
+             <li class="nav-item">
+                 <a href="portfolios.html" class="nav-link">Portfolios	</a>
                  <div class="underline"></div>
+				 <!-- <ul class="dropdown">
+					<li style="font-size: 1.4rem;"><a href="#ASMP"> ASMP</li></a>
+					<li style="font-size: 1.4rem;"><a href="#Events"> Events</li></a>
+					<li style="font-size: 1.4rem;"><a href="#HDA"> HDA</li></a>
+					<li style="font-size: 1.4rem;"><a href="#Ops"> Operations</li></a>
+					<li style="font-size: 1.4rem;"><a href="#Des">Design </li></a>
+					<li style="font-size: 1.4rem;"><a href="#PR"> Media/PR</li></a>
+					<li style="font-size: 1.4rem;"><a href="#Web"> Web</li>	</a>
+				 </ul> -->
              </li>
              <li class="nav-item">
-                 <a href="schedule.html" class="nav-link">Portfolios	</a>
-                 <div class="underline"></div>
+                 <a href="base.html" class="nav-link"><img src="img/base/sarc.png" id="mark" style="width:100px; margin-left: 0;"></a>
              </li>
              <li class="nav-item">
-                 <a href="base.html" class="nav-link"><img src="img/base/sarc.png" id="mark" style="width:100px; 
-     margin-left: 0;"></a>
-             </li>
-             <li class="nav-item">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScnTPkuLsaDqaJAqgfzGiC9c5Z481PYCXFO8VqEcXuK1g6fAw/viewform?usp=pp_url" class="nav-link">Register</a>
+                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScnTPkuLsaDqaJAqgfzGiC9c5Z481PYCXFO8VqEcXuK1g6fAw/viewform?usp=pp_url" class="nav-link">Register</a>
 				<div class="underline"></div>
-				<ul class="dropdown">
-					<li style="font-size: 1.4rem;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeyaAYL073MuSa0WesZjwxjgwfhMvu_bB6D45NOsASqqKnmXA/viewform?usp=pp_url"></a> HDA</li>
-					<li style="font-size: 1.4rem;"><a href="https://docs.google.com/forms/d/e/1FAIpQLScnTPkuLsaDqaJAqgfzGiC9c5Z481PYCXFO8VqEcXuK1g6fAw/viewform?usp=pp_url"></a> Other</li>
+				<ul class="dropdown" id="reg_dropdown">
+					<li style="font-size: 1.4rem;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeyaAYL073MuSa0WesZjwxjgwfhMvu_bB6D45NOsASqqKnmXA/viewform?usp=pp_url">HDA</li></a> 
+					<li style="font-size: 1.4rem;"><a href="https://docs.google.com/forms/d/e/1FAIpQLScnTPkuLsaDqaJAqgfzGiC9c5Z481PYCXFO8VqEcXuK1g6fAw/viewform?usp=pp_url">Other Portfolios</li></a> 
 				</ul>
              </li>
              <li class="nav-item">
@@ -67,7 +77,7 @@
                  <div class="underline"></div>
              </li>
              <li class="nav-link">
-                 <a href="schedule.html">Portfolios</a>
+                 <a href="portfolios.html">Portfolios</a>
                  <div class="underline"></div>
              </li>
              <li class="nav-link">
