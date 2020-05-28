@@ -15,50 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/schedule.css" />
-		<style>
-			.fullscr{
-				display: none;
-			}
-			@media only screen and (min-width: 960px) {
-			.fullscr{
-				display: none;
-			}
-			.row{
-				margin-top: 2%;
-				font-size: 2.4em;
-				margin-bottom: 17%;
-			}
-			.show-row{
-				margin-bottom: 17%;
-			}
-			#navbarVSV{
-				position: sticky;
-				}
-			
-			#top-head{
-				height: 90px;
-			}
-			#top-head:hover + .fullscr{
-				display: block;
-			}
-			.fullscr:hover{
-				display: block;
-			}
-			#go-to-top{
-				position: sticky;
-				bottom: 90%;
-			}
-			.hehe{
-				text-align: center;
-			}
-			p{
-				text-align: justify;
-			}}
-			video{
-				vertical-align: middle;
-				height: 90%;
-			}
-		</style>
+		
 		<style>
 		@font-face{
 		font-family: MyFont;
@@ -86,7 +43,7 @@
      margin-left: 0;"></a>
              </li>
              <li class="nav-item">
-                 <a href="" class="nav-link">Register</a>
+                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBmpFAvFjt2e8sfz44HU_sxGgnOdb2WjYGwk5Jpw527ZNkvw/viewform" class="nav-link">Register</a>
                  <div class="underline"></div>
              </li>
              <li class="nav-item">
@@ -112,7 +69,7 @@
                  <div class="underline"></div>
              </li>
              <li class="nav-link">
-                 <a href="">Register</a>
+                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBmpFAvFjt2e8sfz44HU_sxGgnOdb2WjYGwk5Jpw527ZNkvw/viewform">Register</a>
                  <div class="underline"></div>
              </li>
              <li class="nav-link">
@@ -123,11 +80,10 @@
        </div>
      </div>
  
- 
 	<div id="some-div">
 		<div id="top-head">
 			<h1>Portfolios</h1>
-			<img class="heading_back" src="img/schedule/Shape 8.svg">
+			<img class="heading_back" src="{% static 'img/schedule/Shape 8.svg' %}">
 		</div>
 		<div style="position: sticky;  bottom: 10%;" class="fullscr">
 			<ul class="d-flex flex-row justify-content-around" style="margin-left: auto; margin-right: auto;">
@@ -138,98 +94,122 @@
 				<a class="flex-fill hehe" href="#Des">Design</a>
 				<a class="flex-fill hehe" href="#PR">Media and Public Relations</a>
 				<a class="flex-fill hehe" href="#Web">Web</a>
-			</ul>	
+			</ul>
+			
+			<div style="margin-left: 35%; color: blue; margin-right: auto; font-weight: bolder; font-size: x-large;"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBmpFAvFjt2e8sfz44HU_sxGgnOdb2WjYGwk5Jpw527ZNkvw/viewform">Click here to register for portfolios other than HDA</a></div>
+			<div style="margin-left: 35%; color: blue; margin-right: auto; font-weight: bolder; font-size: x-large;"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyaAYL073MuSa0WesZjwxjgwfhMvu_bB6D45NOsASqqKnmXA/viewform?usp=pp_url">Click here to register for HDA portfolio of SARC, IITB</a></div>	
 		</div>
 	</div>
-
 	<div id="small">
 		<div class="row show-row" id="ASMP">
-			<div class="col-lg-6 col-sm-12 order-sm-1">			
-				<p>Alumni Student Mentorship Programme</p>
-				<img class="heading_back" src="img/schedule/Shape 8.svg">
-				<p style="font-weight:lighter;margin-top:-8%">
-				Alumni Student Mentorship Program is a mentorship program wherein alumni are the mentors to current students. It provides the alumnus with a platform to interact with the students on a one to one basis and the students get an exclusive opportunity to gain from the vast experience and knowledge of our alumni. Along with this we also organize various events like the Shadow program, Break the Ice, Group Mentoring to foster the relation between the mentor and mentee. The ASMP team is responsible for managing the entire process from allocation of 300+ mentors to ideation & execution of the interactive events. 
+			<div class="col-lg-6 col-sm-12 order-sm-1">		
+				<h2>Alumni Student Mentorship Programme</h2>
+				<img class="heading_back" src="{% static 'img/schedule/Shape 8.svg' %}">
+				<p class = "p_2">
+				Alumni Student Mentorship Program is a mentorship program wherein alumni are the mentors to current students. 
+				It provides the alumnus with a platform to interact with the students on a one to one basis and the students get an exclusive opportunity to gain from the vast experience and knowledge of our alumni. 
+				Along with this we also organize various events like the Shadow program, Break the Ice, Group Mentoring to foster the relation between the mentor and mentee. 
+				The ASMP team is responsible for managing the entire process from allocation of 300+ mentors to ideation & execution of the interactive events. 
 				</p>
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<video  width="90%" height="90%" poster="img/base/sarc.png" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="asmp.mp4" type="video/mp4"> </video >
+				<video  width="90%" height="90%" poster="{% static 'img/base/sarc.png' %}" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="{% static 'vid/asmp.mp4' %}" type="video/mp4"> </video >
 			</div>
 		</div>
 
 		<div class="row " id="Events">
-			<div class="col-lg-6 col-sm-12 order-sm-1">			
-				<p>Events</p>
-				<img class="heading_back" src="img/schedule/Shape 8.svg">
-				<p style="font-weight:lighter;margin-top:-8%">
-				The events team is responsible for ideating, planning, and executing various events like freshmen orientation, IVF, Provachan etc from scratch. Coming full Circle the talk that witnesses bigshots like Shailesh J Mehta is also managed by the events team. All the on-ground execution and on-spot decisions are expected by the events team.
+			<div class="col-lg-6 col-sm-12 order-sm-1">		
+				<h2>Events</h2>
+				<img class="heading_back" src="{% static 'img/schedule/Shape 8.svg' %}">
+				<p class = "p_2">
+				The events team is responsible for ideating, planning, and executing various events like freshmen orientation, IVF, Provachan etc from scratch. 
+				Coming full Circle the talk that witnesses bigshots like Shailesh J Mehta is also managed by the events team. 
+				All the on-ground execution and on-spot decisions are expected by the events team.
 				</p>				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<video  width="90%" height="90%" poster="img/base/sarc.png" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="events.mp4" type="video/mp4"> </video >
+				<video  width="90%" height="90%" poster="{% static 'img/base/sarc.png' %}" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="{% static 'vid/events.mp4' %}" type="video/mp4"> </video >
 			</div>
 		</div>
 
 		<div class="row " id="HDA">
-			<div class="col-lg-6 col-sm-12 order-sm-1">			
-				<p>Hostel and Department Affairs</p>
-				<img class="heading_back" src="img/schedule/Shape 8.svg">
-				<p style="font-weight:lighter;margin-top:-8%">
-				The Hostel and Department Affairs team is the connection link between alum and their department/hostel. HDA plays an integral role in creating an opportunity for the students to interact, network and pitch forward ideas to the alumni for the betterment of hostels and department. We ideate and execute amazing events like Phonathon, Core Talks, and Reunions and also provide students with amazing opportunities like the Industrial Learning Program. HATS is another initiative that comes under HDA's umbrella where effort is put in to collect funds for the development of hostels. Being the largest portfolio one gets to bond with a lovely family of more than 20 members.</p>
+			<div class="col-lg-6 col-sm-12 order-sm-1">		
+				<h2>Hostel and Department Affairs</h2>
+				<img class="heading_back" src="{% static 'img/schedule/Shape 8.svg' %}">
+				<p class = "p_2">
+				The Hostel and Department Affairs team is the connection link between alum and their department/hostel. 
+				HDA plays an integral role in creating an opportunity for the students to interact, network and pitch forward ideas to the alumni for the betterment of hostels and department. 
+				We ideate and execute amazing events like Phonathon, Core Talks, and Reunions and also provide students with amazing opportunities like the Industrial Learning Program.  
+				Being the largest portfolio one gets to bond with a lovely family of more than 20 members.
+				We take separate registrations for HDA. <a id="reg_hda" href="https://docs.google.com/forms/d/e/1FAIpQLSeyaAYL073MuSa0WesZjwxjgwfhMvu_bB6D45NOsASqqKnmXA/viewform?usp=pp_url">Click Here to Register</a> 
+				</p>
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<video  width="90%" height="90%" poster="img/base/sarc.png" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="hda.mp4" type="video/mp4"> </video >
+				<video  width="90%" height="90%" poster="{% static 'img/base/sarc.png' %}" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="{% static 'vid/hda.mp4' %}" type="video/mp4"> </video >
 			</div>
 		</div>
 
 		<div class="row " id="Ops">
 			<div class="col-lg-6 col-sm-12 order-sm-1">			
-				<p>Operations</p>
-				<img class="heading_back" src="img/schedule/Shape 8.svg">
-				<p style="font-weight:lighter;margin-top:-8%">
-				The operation team is the backbone of SARC constantly coordinating between the dean ACR office and the SARC team. The operations team gets to manage the resources and budget, For eg- prizes of sarcasm, printing of posters, flexes, hoodies, etc. Dealing with various sorts of vendors and overlooking all the backend work of every event like venue booking, taking permissions and all the infra also comes under the perview of ops.</p>
+				<h2>Operations</h2>
+				<img class="heading_back" src="{% static 'img/schedule/Shape 8.svg' %}">
+				<p class = "p_2">
+				The operation team is the backbone of SARC constantly coordinating between the dean ACR office and the SARC team. 
+				The operations team gets to manage the resources and budget, For eg- prizes of sarcasm, printing of posters, flexes, hoodies, etc. 
+				Dealing with various sorts of vendors and overlooking all the backend work of every event like venue booking, taking permissions and all the infra also comes under the perview of ops.</p>
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<video  width="90%" height="90%" poster="img/base/sarc.png" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="oops.mp4" type="video/mp4"> </video >
+				<video  width="90%" height="90%" poster="{% static 'img/base/sarc.png' %}" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="{% static 'vid/oops.mp4' %}" type="video/mp4"> </video >
 			</div>
 		</div>
 
 		<div class="row " id="Des">
-			<div class="col-lg-6 col-sm-12 order-sm-1">			
-				<p>Design</p>
-				<img class="heading_back" src="img/schedule/Shape 8.svg">
-				<p style="font-weight:lighter;margin-top:-8%">
-				Design is thinking made visual. The design team is responsible for all the publicity work through Branding, posters and invites, flexes and event videos, brochures and handbooks, Websites and portals as well as hoodies and T-shirts. Go through the SARC’s Facebook page and website to have a look at our work :)
+			<div class="col-lg-6 col-sm-12 order-sm-1">		
+				<h2>Design</h2>
+				<img class="heading_back" src="{% static 'img/schedule/Shape 8.svg' %}">
+				<p class = "p_2">
+				Design is thinking made visual. 
+				The design team is responsible for all the publicity work through Branding, posters and invites, flexes and event videos, brochures and handbooks, Websites and portals as well as hoodies and T-shirts. 
+				Go through the SARC’s Facebook page and website to have a look at our work :)
 				</p>
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<video  width="90%" height="90%" poster="img/base/sarc.png" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="design.mp4" type="video/mp4"> </video >
+				<video  width="90%" height="90%" poster="{% static 'img/base/sarc.png' %}" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="{% static 'vid/design.mp4' %}" type="video/mp4"> </video >
 			</div>
 		</div>
 		<div class="row " id="PR">
 			<div class="col-lg-6 col-sm-12 order-sm-1">			
-				<p>Media and Public Relations</p>
-				<img class="heading_back" src="img/schedule/Shape 8.svg">
-				<p style="font-weight:lighter;margin-top:-8%">
-				PR is the face of SARC for Student and Alumni bodies. We manage all the social media accounts of SARC. The themes of various events, their online and offline publicity, coverage (photography and videography) along with maintaining the digital library comes under our purview. The PR team exercises a good amount of freedom in terms of interaction with the alumni. We can take the interviews of alumni as and when needed. The highly successful head-scratching crypt hunt SARCASM is another event PR takes pride in. Finally we keep the alumni connected to the happenings of the institute through the Dean’s monthly newsletter.</p>
+				<h2>Media and Public Relations</h2>
+				<img class="heading_back" src="{% static 'img/schedule/Shape 8.svg' %}">
+				<p class = "p_2">
+				PR is the face of SARC for Student and Alumni bodies. We manage all the social media accounts of SARC. 
+				The themes of various events, their online and offline publicity, coverage (photography and videography) along with maintaining the digital library comes under our purview. 
+				The PR team exercises a good amount of freedom in terms of interaction with the alumni. We can take the interviews of alumni as and when needed. 
+				The highly successful head-scratching crypt hunt SARCASM is another event PR takes pride in. 
+				Finally we keep the alumni connected to the happenings of the institute through the Dean’s monthly newsletter.</p>
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<video  width="90%" height="90%" poster="img/base/sarc.png" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="pr.mp4" type="video/mp4"> </video >
+				<video  width="90%" height="90%" poster="{% static 'img/base/sarc.png' %}" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="{% static 'vid/pr.mp4' %}" type="video/mp4"> </video >
 			</div>
 		</div>
 		<div class="row " id="Web">
-			<div class="col-lg-6 col-sm-12 order-sm-1">			
-				<p>Web :)</p>
-				<img class="heading_back" src="img/schedule/Shape 8.svg">
-				<p style="font-weight:lighter;margin-top:-8%">
-				The web team is responsible for building all the portals(including the amazing one you are looking at right now), websites, and blog pages. The most amazing aspect of being in the web team is you get to learn both technical and soft skills. Just do a quick Google for SARC to have a look at all the cool things we have done. Also did we mention the only prerequisite is enthusiasm.</p>
+			<div class="col-lg-6 col-sm-12 order-sm-1">		
+				<h2>Web :)</h2>
+				<img class="heading_back" src="{% static 'img/schedule/Shape 8.svg' %}">
+				<p class = "p_2">
+				The web team is responsible for building all the portals(including the one you are looking at right now) and websites of SARC.
+				We bring up the mind-scratching games like sarcasm and platforms like YearBook on your screens.  
+				The most amazing aspect of being in the web team is you get to learn both technical and soft skills.
+				Just do a quick Google for SARC to have a look at all the cool things we have done. 
+				Also did we mention the only prerequisite is enthusiasm.</p>
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<video  width="90%" height="90%" poster="img/base/sarc.png" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="web.mp4" type="video/mp4"> </video >
+				<video  width="90%" height="90%" poster="{% static 'img/base/sarc.png' %}" controls="controls" style="margin-left: 5%; margin-right:5%;"> <source src="{% static 'vid/web.mp4' %}" type="video/mp4"> </video >
 			</div>
 		</div>
 		<div class="" style="position: fixed;
@@ -314,3 +294,4 @@ $("video").tilt({
 	</script>
 </body>
 </html>
+	
