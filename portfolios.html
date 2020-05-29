@@ -300,9 +300,9 @@
 $('.thumbnail').waypoint(function() {
 	$(this['element']).addClass('block_reveal');
 },{offset:'50%'});
-$("video").tilt({
+$("iframe").tilt({
 	maxTilt:        10,
-	perspective:   	600,   // Transform perspective, the lower the more extreme the tilt gets.
+	perspective:   	400,   // Transform perspective, the lower the more extreme the tilt gets.
 	easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
 	scale:          1,      // 2 = 200%, 1.5 = 150%, etc..
 	speed:          600,    // Speed of the enter/exit transition.
