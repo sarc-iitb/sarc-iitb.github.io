@@ -129,7 +129,7 @@
 				</p>
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<iframe width="90%" height="90%" src="https://www.youtube.com/embed/jmHO5YdjJxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<iframe class="video-frame" width="90%" height="50%" id="asmp-vid" src="https://www.youtube.com/embed/jmHO5YdjJxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe class="video-frame"></div>
 		</div>
 
 		<div class="row " id="Events">
@@ -143,7 +143,7 @@
 				</p>				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<iframe width="90%" height="90%" src="https://www.youtube.com/embed/1xrdsN9NU0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<iframe class="video-frame" width="90%" height="90%" id="events-vid"src="https://www.youtube.com/embed/1xrdsN9NU0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe class="video-frame"></div>
 		</div>
 
 		<div class="row " id="HDA">
@@ -160,7 +160,7 @@
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<iframe width="90%" height="90%" src="https://www.youtube.com/embed/NDw6473mtDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<iframe class="video-frame" width="90%" height="90%" id="hda-vid" src="https://www.youtube.com/embed/NDw6473mtDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe class="video-frame"></div>
 		</div>
 
 		<div class="row " id="Ops">
@@ -174,7 +174,7 @@
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<iframe width="90%" height="90%" src="https://www.youtube.com/embed/2TvJILhrD5U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<iframe class="video-frame" width="90%" height="90%" id="ops-vid" src="https://www.youtube.com/embed/2TvJILhrD5U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe class="video-frame"></div>
 		</div>
 
 		<div class="row " id="Des">
@@ -189,7 +189,7 @@
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<iframe width="90%" height="90%" src="https://www.youtube.com/embed/f9A53ZUddsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<iframe class="video-frame" width="90%" height="90%" id="des-vid" src="https://www.youtube.com/embed/f9A53ZUddsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe class="video-frame"></div>
 		</div>
 		<div class="row " id="PR">
 			<div class="col-lg-6 col-sm-12 order-sm-1">			
@@ -204,7 +204,7 @@
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<iframe width="90%" height="90%" src="https://www.youtube.com/embed/azzCT7l6FSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<iframe class="video-frame" width="90%" height="90%" id="pr-vid" src="https://www.youtube.com/embed/azzCT7l6FSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe class="video-frame"></div>
 		</div>
 		<div class="row " id="Web">
 			<div class="col-lg-6 col-sm-12 order-sm-1">		
@@ -219,13 +219,11 @@
 				
 			</div>
 			<div class="col-lg-6 col-sm-12 order-sm-2">
-				<iframe width="90%" height="90%" src="https://www.youtube.com/embed/ZB0OcKP3R9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<iframe class="video-frame" width="90%" height="90%" id="web-vid" src="https://www.youtube.com/embed/ZB0OcKP3R9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe class="video-frame"></div>
 		</div>
-		<div class="" style="position: fixed;
-		top: 95%;
-		right: 5%;
-		">
-			<a href="#top-head">Go To Top </a>
+		<div class="" style="position: fixed;top: 95%;right: 5%;">
+			<a style="cursor: pointer; z-index: 500;" onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</a>
+
 		</div>
 	</div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -275,7 +273,27 @@
 	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/tilt.js"></script>
-
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
 	<script>
 	
 		jQuery(document).ready(function($) {
